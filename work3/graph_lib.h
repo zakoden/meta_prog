@@ -242,7 +242,7 @@ NodesList<GraphType> NodesDFS(size_t start, GraphType graph) {
 	NodesList<GraphType> res;
 
 	std::vector<size_t> q;
-	q.push(start);
+	q.push_back(start);
 	while (!q.empty()) {
 		size_t cur = q.back();
 		q.pop_back();
@@ -255,7 +255,7 @@ NodesList<GraphType> NodesDFS(size_t start, GraphType graph) {
 }
 
 template<class GraphType>
-NodesList<GraphType> NodesInd(size_t start, GraphType graph) {
+NodesList<GraphType> NodesInd(GraphType graph) {
 	NodesList<GraphType> res;
 	for (size_t i = 0; i < graph.Size(); ++i) {
 		res.PushBack(i);
