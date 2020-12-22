@@ -1,4 +1,4 @@
-## graph_lib.h
+# graph_lib.h
 Основной файл, содержащий классы для работы с графами.
 
 Два класса `DynamicMatrixGraph<NodeType, EdgeType>`, `DynamicListGraph<NodeType, EdgeType>` для хранения графа в виде матрицы смежности и списка смежности соответственно.
@@ -26,7 +26,7 @@
 - `NodesDFS<GraphType>(size_t start, GraphType graph)` - индексы вершин в порядке `dfs`
 - `NodesInd<GraphType>(GraphType graph)` - индексы вершин в порядке возрастания
 
-## dispatcher.h
+# dispatcher.h
 Реализация двойной диспетчеризации на графе.
 ```
 template <
